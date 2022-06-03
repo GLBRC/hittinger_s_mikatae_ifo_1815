@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>S. mikatae ( IFO 1815 )</title>
+    <title>S. mikatae ( IFO 1815 )</title>>
   </head>
   <body>
     <!-- Header banner -->
@@ -12,7 +12,7 @@
       <div class="row py-3">
         <div class="col-12 text-center">
           <h1 class="display-1 fw-bold text-white mb-4">S. mikatae ( IFO 1815 )</h1>
-          <h3 class="fw-bold text-white mb-3">Source: Scannell and Zill (2011)</h3>
+          <h3 class="fw-bold text-white mb-3">Source: Scannell/Zill et al. 2011</h3>
         </div>
       </div>
     </div>
@@ -20,66 +20,93 @@
     <!-- Content -->
     <div class="container py-2">
       <div class="row">
-        <h3 class="border-top border-bottom">Overview</h3>
+        <div class="col">
+          <h3 class="border-top border-bottom">Overview</h3>
+        </div>
       </div>
       <div class="row">
-        <p>This genome was originally published on GxSeq.</p>
-        <p>For any queries related to this please contact Chris Hittinger at <a href="mailto:cthittinger@wisc.edu">cthittinger@wisc.edu</a>.
-        </p>
+        <div class="col">
+          <p>For any queries related to this please contact Chris Hittinger at <a href="mailto:cthittinger@wisc.edu">cthittinger@wisc.edu</a>.
+          </p>
+          <p>If you use this data in your work please cite: Scannell/Zill et al. 2011.</p>
+          <ul>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/22384314/">https://pubmed.ncbi.nlm.nih.gov/22384314/</a></li>
+            <li><a href="https://doi.org/10.1534/g3.111.000273">https://doi.org/10.1534/g3.111.000273</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="container py-2">
       <div class="row">
-        <h3 class="border-top border-bottom">Genome Browser</h3>
+        <div class="col">
+          <h3 class="border-top border-bottom">Genome Browser</h3>
+        </div>
       </div>
       <div class="row">
-        <div id="genome-browser"></div>
+        <div class="col">
+          <div id="genome-browser"></div>
+        </div>
       </div>
     </div>
     <div class="container py-2">
       <div class="row">
-        <h3 class="border-top border-bottom">Files</h3>
+        <div class="col">
+          <h3 class="border-top border-bottom">Files</h3>
+        </div>
       </div>
       <div class="row">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Filename</th>
-              <th scope="col">Description</th>
-              <th scope="col">Size</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td><a href="genome/Smik.concat.fasta">Smik.concat.fasta</a></td>
-              <td>This is a concatenation of `Smik.ultrascaf.fasta` and `Smik.unplaced.fasta` used with the embedded igv
-                browser. Sequence names have had the prefix 'Smik_' removed to match the sequence name format in
-                `Smik.gff`.
-              </td>
-              <td>11.8 MB</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><a href="genome/Smik.ultrascaf.fasta">Smik.ultrascaf.fasta</a></td>
-              <td>Original file</td>
-              <td>11.2 MB</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><a href="genome/Smik.unplaced.fasta">Smik.unplaced.fasta</a></td>
-              <td>Original file</td>
-              <td>320 KB</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td><a href="genome/Smik.gff">Smik.gff</a></td>
-              <td>Original file</td>
-              <td>2.6 MB</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="col-auto" scope="col">Filename</th>
+                <th class="col-auto" scope="col">Description</th>
+                <th class="col-1" scope="col">Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="genome/Smik.concat.fasta">Smik.concat.fasta</a></td>
+                <td>This is a concatenation of `Smik.ultrascaf.fasta` and `Smik.unplaced.fasta` used with the embedded
+                  igv
+                  browser. Sequence names have had the prefix 'Smik_' removed to match the sequence name format in
+                  `Smik.gff`.
+                </td>
+                <td>11.8 MB</td>
+              </tr>
+              <tr>
+                <td><a href="genome/Smik.ultrascaf.fasta">Smik.ultrascaf.fasta</a></td>
+                <td>Original file</td>
+                <td>11.2 MB</td>
+              </tr>
+              <tr>
+                <td><a href="genome/Smik.unplaced.fasta">Smik.unplaced.fasta</a></td>
+                <td>Original file</td>
+                <td>320 KB</td>
+              </tr>
+              <tr>
+                <td><a href="genome/Smik.gff">Smik.gff</a></td>
+                <td>Original file</td>
+                <td>2.6 MB</td>
+              </tr>
+              <tr>
+                <td><a href="genome/Smik_aa.tar.gz">Smik_aa.tar.gz</a></td>
+                <td>S. Mikatae protein Blast database.</td>
+                <td>3.2 MB</td>
+              </tr>
+              <tr>
+                <td><a href="genome/Smik_features.tar.gz">Smik_features.tar.gz</a></td>
+                <td>S. Mikatae nucleotide features Blast database.</td>
+                <td>4.8 MB</td>
+              </tr>
+              <tr>
+                <td><a href="genome/Smik_ultrascaf.tar.gz">Smik_ultrascaf.tar.gz</a></td>
+                <td>S. Mikatae full chromosome Blast database.</td>
+                <td>6.0 MB</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
