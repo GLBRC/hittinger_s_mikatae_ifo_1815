@@ -150,7 +150,11 @@
         igv.createBrowser(igvDiv, options)
           .then(function (browser) {
             console.log("Created IGV browser");
-          });
+            let urlParams = new URLSearchParams(window.location.search);
+            if( urlParams.has('q') ){
+              browser.search( urlParams.get('q') );
+            }
+        });
       });
     </script>
   </body>
